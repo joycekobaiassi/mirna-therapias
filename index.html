@@ -180,7 +180,7 @@ footer {
 <p class="therapy-price">
   💰 <strong>Valor:</strong> R$ 150,00
 </p>
-<button class="whatsapp-btn" onclick="mostrarPagamento(this)">
+<button class="checkout-btn" onclick="mostrarPagamento(this)">
   Preciso dessa terapia
 </button>
 
@@ -471,13 +471,18 @@ function toggle(btn) {
 </script>
 <script>
 function mostrarPagamento(btn) {
-  const box = btn.nextElementSibling;
-  box.style.display =
-    box.style.display === "block" ? "none" : "block";
+  const box = btn.parentElement.querySelector(".pagamento-box");
+
+  if (box.style.display === "block") {
+    box.style.display = "none";
+  } else {
+    box.style.display = "block";
+  }
 }
 </script>
 </body>
 </html>
+
 
 
 
