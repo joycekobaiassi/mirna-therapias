@@ -57,7 +57,7 @@ header p {
 }
 
 /* BOTÃO TERAPIA */
-.therapy button {
+.therapy > button {
   width: 100%;
   background: linear-gradient(120deg, #7a1fa2, #2b0a3d);
   border: none;
@@ -268,3 +268,4 @@ footer {
   transform: scale(1.03);
   box-shadow: 0 0 15px rgba(255, 87, 34, .4);
 }
+
