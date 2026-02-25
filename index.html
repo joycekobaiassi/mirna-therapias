@@ -180,10 +180,27 @@ footer {
 <p class="therapy-price">
   💰 <strong>Valor:</strong> R$ 150,00
 </p>
+<button class="whatsapp-btn" onclick="mostrarPagamento(this)">
+  Preciso dessa terapia
+</button>
+
+<div class="pagamento-box">
+  <p><strong>💰 Pagamento via Pix</strong></p>
+  <p><strong>Chave Pix:</strong> CPF 49502239172</p>
+  <p><strong>Banco:</strong> Inter – Rosangela Kobaiassi</p>
+
+  <p style="margin-top:12px;">
+    📌 Após o pagamento envie:
+    <br>• Nome completo de batismo
+    <br>• Data de nascimento
+    <br>• Endereço completo
+    <br>• Comprovante do Pix
+  </p>
+
   <a class="whatsapp-btn" target="_blank"
-href="https://wa.me/5567999394608?text=Oi%2C%20quero%20fazer%20o%20Alinhamento%20de%20Chakras.%20Pode%20me%20informar%20hor%C3%A1rios%20e%20valores%3F">
-Falar no WhatsApp
-</a>
+  href="https://wa.me/5567999394608?text=Oi,%20acabei%20de%20realizar%20o%20Pix%20para%20Alinhamento%20de%20Chakras.%20Segue%20meus%20dados:">
+  Enviar no WhatsApp
+  </a>
 </div>
 </div>
 
@@ -452,9 +469,16 @@ function toggle(btn) {
     content.style.display === "block" ? "none" : "block";
 }
 </script>
-
+<script>
+function mostrarPagamento(btn) {
+  const box = btn.nextElementSibling;
+  box.style.display =
+    box.style.display === "block" ? "none" : "block";
+}
+</script>
 </body>
 </html>
+
 
 
 
