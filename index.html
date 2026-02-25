@@ -462,11 +462,19 @@ function toggle(btn) {
   all.forEach(c => {
     if (c !== content) {
       c.style.display = "none";
+
+      // fecha qualquer pagamento aberto
+      const pagamento = c.querySelector(".pagamento-box");
+      if (pagamento) pagamento.style.display = "none";
     }
   });
 
   content.style.display =
     content.style.display === "block" ? "none" : "block";
+
+  // sempre fecha pagamento ao abrir card
+  const pagamento = content.querySelector(".pagamento-box");
+  if (pagamento) pagamento.style.display = "none";
 }
 </script>
 <script>
@@ -482,6 +490,7 @@ function mostrarPagamento(btn) {
 </script>
 </body>
 </html>
+
 
 
 
