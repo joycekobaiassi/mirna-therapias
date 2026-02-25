@@ -241,5 +241,14 @@ footer {
     transform: translateY(0);
   }
 }
+.pagamento-box {
+  display: none;
+  background: #1a0f25;
+  padding: 18px;
+  border-radius: 12px;
+  margin-top: 15px;
+  border: 1px solid #3b1c57;
+  animation: open .4s ease;
+}
 
 
